@@ -61,7 +61,7 @@ export default function MedGuardInterface() {
 
     try {
       // Faz o POST para o motor Tesseract na porta 8000
-      const response = await fetch('http://127.0.0.1:8000/api/analise', {
+      const response = await fetch('https://zlatan-motor-ocr.onrender.com/api/analise', {
         method: 'POST',
         body: formData,
       });
@@ -120,7 +120,7 @@ export default function MedGuardInterface() {
         <h1 className="text-4xl font-bold text-white tracking-widest uppercase">
           Zlatan<span className="text-red-600">.</span>MedGuard
         </h1>
-        <p className="text-slate-400 mt-2 text-sm">Módulo de Auditoria Forense de Documentos Médicos</p>
+        <p className="text-slate-400 mt-2 text-sm">Auditoria Forense de Atestados Médicos</p>
       </div>
 
       <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
